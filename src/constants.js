@@ -1,0 +1,110 @@
+export const data = [
+  {
+    id: 1,
+    firstname: 'Joshua',
+    lastname: 'Rolluffs',
+    email: 'vadym.kobylan@gmail.com',
+    tasks: 7,
+    closestTime: '20:30',
+    isFree: true,
+  },
+  {
+    id: 2,
+    name: {
+      firstName: 'Emma',
+      lastName: 'Smith',
+    },
+    email: 'emma.smith@example.com',
+    tasks: 5,
+    closestTime: '18:45',
+    isFree: false,
+  },
+  {
+    id: 3,
+    name: {
+      firstName: 'Michael',
+      lastName: 'Johnson',
+    },
+    email: 'michael.johnson@example.com',
+    tasks: 10,
+    closestTime: '21:15',
+    isFree: true,
+  },
+  {
+    id: 4,
+    name: {
+      firstName: 'Sophia',
+      lastName: 'Brown',
+    },
+    email: 'sophia.brown@example.com',
+    tasks: 3,
+    closestTime: '19:00',
+    isFree: true,
+  },
+  {
+    id: 5,
+    name: {
+      firstName: 'Daniel',
+      lastName: 'Miller',
+    },
+    email: 'daniel.miller@example.com',
+    tasks: 8,
+    closestTime: '20:00',
+    isFree: false,
+  },
+  {
+    id: 6,
+    name: {
+      firstName: 'Olivia',
+      lastName: 'Taylor',
+    },
+    email: 'olivia.taylor@example.com',
+    tasks: 6,
+    closestTime: '19:30',
+    isFree: true,
+  },
+  {
+    id: 7,
+    name: {
+      firstName: 'Matthew',
+      lastName: 'Davis',
+    },
+    email: 'matthew.davis@example.com',
+    tasks: 4,
+    closestTime: '18:15',
+    isFree: false,
+  },
+  {
+    id: 8,
+    name: {
+      firstName: 'Ava',
+      lastName: 'Wilson',
+    },
+    email: 'ava.wilson@example.com',
+    tasks: 9,
+    closestTime: '21:45',
+    isFree: true,
+  },
+  {
+    id: 9,
+    name: {
+      firstName: 'William',
+      lastName: 'Martinez',
+    },
+    email: 'william.martinez@example.com',
+    tasks: 2,
+    closestTime: '17:45',
+    isFree: true,
+  },
+  {
+    id: 15,
+    name: {
+      firstName: 'Isabella',
+      lastName: 'Anderson',
+    },
+    email: 'isabella.anderson@example.com',
+    tasks: 7,
+    closestTime: '20:15',
+    isFree: false,
+  },
+];
