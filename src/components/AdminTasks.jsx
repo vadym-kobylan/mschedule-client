@@ -42,6 +42,12 @@ const AdminTasks = () => {
     });
   }
 
+  // Function to convert date string to new format
+  function convertDateFormat(dateString) {
+    const date = new Date(dateString);
+    return date.toString().replace(/\s\(.+\)/, '');
+  }
+
   useEffect(() => {
     const headers = {
       Authorization: `Bearer ${token}`,
@@ -72,8 +78,18 @@ const AdminTasks = () => {
 
     const savedData = lowerKeys(scheduleObj.current.eventsData);
 
+    // Loop through the array and update each object
+    const updatedEvents = savedData.map((event) => ({
+      ...event,
+      startTime: convertDateFormat(event.startTime),
+      endTime: convertDateFormat(event.endTime),
+    }));
+
+
     axios
-      .post(`http://localhost:8080/api/v1/staff/${doctorId}/create-task`, savedData, { headers })
+      .post(`http://localhost:8080/api/v1/staff/${doctorId}/create-task`, updatedEvents, {
+        headers,
+      })
       .then((res) => {})
       .catch((error) => {
         console.error(error);
